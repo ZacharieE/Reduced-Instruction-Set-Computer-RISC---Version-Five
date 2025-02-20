@@ -1,0 +1,67 @@
+# RISC-V Microcontroller Core
+
+This repository contains the VHDL implementation of a RISC-V microcontroller core, designed and tested as part of a VLSI project. The core is built using a modular approach and is verified through various testbenches.
+
+## Project Overview
+- Designed a 32-bit RISC-V microcontroller core using VHDL.
+- Implemented essential modules such as ALU, Program Counter, Register File, and Control Unit.
+- Developed a five-stage pipeline architecture to enhance instruction throughput.
+- Verified functionality through testbenches for each module.
+
+## Key Components
+- **ALU**: Performs arithmetic and logical operations.
+- **Program Counter (PC)**: Manages instruction addresses.
+- **Register File (RF)**: Stores general-purpose registers.
+- **Decoder**: Decodes instructions and generates control signals.
+- **Fetch, Decode, Execute, Memory, Writeback**: Implements a standard pipeline structure.
+
+## Simulation and Testing
+- Testbenches provided for all major components:
+  - `riscv_alu_tb`
+  - `riscv_pc_tb`
+  - `riscv_rf_tb`
+  - `riscv_decoder_tb`
+  - `riscv_fetch_tb`
+  - `riscv_id_tb`
+  - `riscv_ex_tb`
+  - `riscv_me_tb`
+  - `riscv_wb_tb`
+- Simulation performed using ModelSim and Vivado.
+
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/riscv_microcontroller_core.git
+   cd riscv_microcontroller_core
+   ```
+2. Open your preferred VHDL simulation or synthesis tool.
+3. Add the source files and corresponding testbenches.
+4. Compile and simulate to verify module functionality.
+
+## Directory Structure
+```
+.
+├── riscv_alu.vhd
+├── riscv_pc.vhd
+├── riscv_rf.vhd
+├── riscv_decoder.vhd
+├── riscv_fetch.vhd
+├── riscv_id.vhd
+├── riscv_ex.vhd
+├── riscv_me.vhd
+├── riscv_wb.vhd
+├── testbenches/
+│   ├── riscv_alu_tb.vhd
+│   ├── riscv_pc_tb.vhd
+│   ├── riscv_rf_tb.vhd
+│   ├── riscv_decoder_tb.vhd
+│   ├── riscv_fetch_tb.vhd
+│   ├── riscv_id_tb.vhd
+│   ├── riscv_ex_tb.vhd
+│   ├── riscv_me_tb.vhd
+│   └── riscv_wb_tb.vhd
+```
+
+## License
+This project is licensed under the MIT License. Feel free to modify and use it for educational and personal projects.
+
